@@ -480,8 +480,8 @@ namespace Tictactoe {
 				Enabled_False();
 			}
 			if (button7->Text == "X" && button5->Text == "X" && button3->Text == "X") {
-				button1->BackColor = System::Drawing::Color::PowderBlue;
-				button2->BackColor = System::Drawing::Color::PowderBlue;
+				button7->BackColor = System::Drawing::Color::PowderBlue;
+				button5->BackColor = System::Drawing::Color::PowderBlue;
 				button3->BackColor = System::Drawing::Color::PowderBlue;
 				MessageBox::Show("Pemain X menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
@@ -563,8 +563,8 @@ namespace Tictactoe {
 				Enabled_False();
 			}
 			if (button7->Text == "O" && button5->Text == "O" && button3->Text == "O") {
-				button1->BackColor = System::Drawing::Color::Gold;
-				button2->BackColor = System::Drawing::Color::Gold;
+				button7->BackColor = System::Drawing::Color::Gold;
+				button5->BackColor = System::Drawing::Color::Gold;
 				button3->BackColor = System::Drawing::Color::Gold;
 				MessageBox::Show("Pemain O menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
