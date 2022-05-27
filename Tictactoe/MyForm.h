@@ -46,7 +46,7 @@ namespace Tictactoe {
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::Button^ button_Reset;
+
 	private: System::Windows::Forms::Label^ lblPlayer;
 	private: System::Windows::Forms::Button^ button_NewGame;
 	private: System::Windows::Forms::Label^ lbl1;
@@ -85,7 +85,6 @@ namespace Tictactoe {
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->button_NewGame = (gcnew System::Windows::Forms::Button());
 			this->lblPlayer = (gcnew System::Windows::Forms::Label());
-			this->button_Reset = (gcnew System::Windows::Forms::Button());
 			this->lbl1 = (gcnew System::Windows::Forms::Label());
 			this->lbl2 = (gcnew System::Windows::Forms::Label());
 			this->lblX = (gcnew System::Windows::Forms::Label());
@@ -138,8 +137,9 @@ namespace Tictactoe {
 			// 
 			// button9
 			// 
-			this->button9->BackColor = System::Drawing::SystemColors::ControlLight;
-			this->button9->Font = (gcnew System::Drawing::Font(L"Verdana", 22.02985F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button9->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button9->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button9->Font = (gcnew System::Drawing::Font(L"Verdana", 25.79104F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button9->ForeColor = System::Drawing::Color::White;
 			this->button9->Location = System::Drawing::Point(295, 262);
@@ -151,8 +151,9 @@ namespace Tictactoe {
 			// 
 			// button8
 			// 
-			this->button8->BackColor = System::Drawing::SystemColors::ControlLight;
-			this->button8->Font = (gcnew System::Drawing::Font(L"Verdana", 22.02985F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button8->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button8->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button8->Font = (gcnew System::Drawing::Font(L"Verdana", 25.79104F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button8->ForeColor = System::Drawing::Color::White;
 			this->button8->Location = System::Drawing::Point(153, 262);
@@ -164,8 +165,9 @@ namespace Tictactoe {
 			// 
 			// button7
 			// 
-			this->button7->BackColor = System::Drawing::SystemColors::ControlLight;
-			this->button7->Font = (gcnew System::Drawing::Font(L"Verdana", 22.02985F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button7->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button7->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button7->Font = (gcnew System::Drawing::Font(L"Verdana", 25.79104F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button7->ForeColor = System::Drawing::Color::White;
 			this->button7->Location = System::Drawing::Point(11, 262);
@@ -177,8 +179,9 @@ namespace Tictactoe {
 			// 
 			// button6
 			// 
-			this->button6->BackColor = System::Drawing::SystemColors::ControlLight;
-			this->button6->Font = (gcnew System::Drawing::Font(L"Verdana", 22.02985F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button6->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button6->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button6->Font = (gcnew System::Drawing::Font(L"Verdana", 25.79104F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button6->ForeColor = System::Drawing::Color::White;
 			this->button6->Location = System::Drawing::Point(295, 138);
@@ -190,8 +193,9 @@ namespace Tictactoe {
 			// 
 			// button5
 			// 
-			this->button5->BackColor = System::Drawing::SystemColors::ControlLight;
-			this->button5->Font = (gcnew System::Drawing::Font(L"Verdana", 22.02985F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button5->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button5->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button5->Font = (gcnew System::Drawing::Font(L"Verdana", 25.79104F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button5->ForeColor = System::Drawing::Color::White;
 			this->button5->Location = System::Drawing::Point(153, 138);
@@ -203,8 +207,9 @@ namespace Tictactoe {
 			// 
 			// button4
 			// 
-			this->button4->BackColor = System::Drawing::SystemColors::ControlLight;
-			this->button4->Font = (gcnew System::Drawing::Font(L"Verdana", 22.02985F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button4->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button4->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Verdana", 25.79104F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button4->ForeColor = System::Drawing::Color::White;
 			this->button4->Location = System::Drawing::Point(11, 138);
@@ -216,8 +221,9 @@ namespace Tictactoe {
 			// 
 			// button3
 			// 
-			this->button3->BackColor = System::Drawing::SystemColors::ControlLight;
-			this->button3->Font = (gcnew System::Drawing::Font(L"Verdana", 22.02985F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button3->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button3->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button3->Font = (gcnew System::Drawing::Font(L"Verdana", 25.79104F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button3->ForeColor = System::Drawing::Color::White;
 			this->button3->Location = System::Drawing::Point(295, 14);
@@ -229,8 +235,9 @@ namespace Tictactoe {
 			// 
 			// button2
 			// 
-			this->button2->BackColor = System::Drawing::SystemColors::ControlLight;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Verdana", 22.02985F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button2->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Verdana", 25.79104F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::Color::White;
 			this->button2->Location = System::Drawing::Point(153, 14);
@@ -242,8 +249,9 @@ namespace Tictactoe {
 			// 
 			// button1
 			// 
-			this->button1->BackColor = System::Drawing::SystemColors::ControlLight;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Verdana", 22.02985F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button1->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Verdana", 25.79104F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::Color::White;
 			this->button1->Location = System::Drawing::Point(11, 14);
@@ -258,7 +266,6 @@ namespace Tictactoe {
 			this->panel3->BackColor = System::Drawing::Color::Transparent;
 			this->panel3->Controls->Add(this->button_NewGame);
 			this->panel3->Controls->Add(this->lblPlayer);
-			this->panel3->Controls->Add(this->button_Reset);
 			this->panel3->Location = System::Drawing::Point(473, 240);
 			this->panel3->Name = L"panel3";
 			this->panel3->Size = System::Drawing::Size(307, 166);
@@ -272,11 +279,11 @@ namespace Tictactoe {
 			this->button_NewGame->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 10.20895F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button_NewGame->ForeColor = System::Drawing::Color::Snow;
-			this->button_NewGame->Location = System::Drawing::Point(153, 85);
+			this->button_NewGame->Location = System::Drawing::Point(53, 85);
 			this->button_NewGame->Name = L"button_NewGame";
-			this->button_NewGame->Size = System::Drawing::Size(138, 57);
+			this->button_NewGame->Size = System::Drawing::Size(209, 57);
 			this->button_NewGame->TabIndex = 10;
-			this->button_NewGame->Text = L"New Game";
+			this->button_NewGame->Text = L"Reset Game";
 			this->button_NewGame->UseVisualStyleBackColor = false;
 			this->button_NewGame->Click += gcnew System::EventHandler(this, &MyForm::button_NewGame_Click);
 			// 
@@ -291,22 +298,6 @@ namespace Tictactoe {
 			this->lblPlayer->Size = System::Drawing::Size(209, 36);
 			this->lblPlayer->TabIndex = 5;
 			this->lblPlayer->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// button_Reset
-			// 
-			this->button_Reset->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(47)), static_cast<System::Int32>(static_cast<System::Byte>(49)),
-				static_cast<System::Int32>(static_cast<System::Byte>(48)));
-			this->button_Reset->Cursor = System::Windows::Forms::Cursors::Hand;
-			this->button_Reset->Font = (gcnew System::Drawing::Font(L"Bahnschrift", 10.20895F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->button_Reset->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->button_Reset->Location = System::Drawing::Point(7, 85);
-			this->button_Reset->Name = L"button_Reset";
-			this->button_Reset->Size = System::Drawing::Size(142, 57);
-			this->button_Reset->TabIndex = 9;
-			this->button_Reset->Text = L"Reset";
-			this->button_Reset->UseVisualStyleBackColor = false;
-			this->button_Reset->Click += gcnew System::EventHandler(this, &MyForm::button10_Click);
 			// 
 			// lbl1
 			// 
@@ -426,6 +417,41 @@ namespace Tictactoe {
 			button9->Enabled = false;
 		}
 
+		//Fungsi mengulang permainan
+		void Reset_Game() {
+			button1->Enabled = true;
+			button2->Enabled = true;
+			button3->Enabled = true;
+			button4->Enabled = true;
+			button5->Enabled = true;
+			button6->Enabled = true;
+			button7->Enabled = true;
+			button8->Enabled = true;
+			button9->Enabled = true;
+
+			button1->Text = "";
+			button2->Text = "";
+			button3->Text = "";
+			button4->Text = "";
+			button5->Text = "";
+			button6->Text = "";
+			button7->Text = "";
+			button8->Text = "";
+			button9->Text = "";
+
+			button1->BackColor = System::Drawing::Color::White;
+			button2->BackColor = System::Drawing::Color::White;
+			button3->BackColor = System::Drawing::Color::White;
+			button4->BackColor = System::Drawing::Color::White;
+			button5->BackColor = System::Drawing::Color::White;
+			button6->BackColor = System::Drawing::Color::White;
+			button7->BackColor = System::Drawing::Color::White;
+			button8->BackColor = System::Drawing::Color::White;
+			button9->BackColor = System::Drawing::Color::White;
+
+			button_NewGame->Enabled = true;
+		}
+
 		//Pengecek giliran pemain, untuk menampilkan giliran
 		void PlayerTurn() {
 			if (checker == false) {
@@ -437,8 +463,9 @@ namespace Tictactoe {
 		}
 
 		//Fungsi skor untuk penghitung setiap kali menang
-		//Setiap sisi memiliki 8 kondisi kemenangan
+		//Setiap tanda memiliki 8 kondisi kemenangan
 		void score() {
+			/****************  Kondisi menang Pemain X  ****************/
 			if (button1->Text == "X" && button2->Text == "X" && button3->Text == "X") {
 				button1->BackColor = System::Drawing::Color::PowderBlue;
 				button2->BackColor = System::Drawing::Color::PowderBlue;
@@ -447,7 +474,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblX->Text);
 				lblX->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button1->Text == "X" && button5->Text == "X" && button9->Text == "X") {
 				button1->BackColor = System::Drawing::Color::PowderBlue;
@@ -457,7 +484,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblX->Text);
 				lblX->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button4->Text == "X" && button5->Text == "X" && button6->Text == "X") {
 				button4->BackColor = System::Drawing::Color::PowderBlue;
@@ -467,7 +494,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblX->Text);
 				lblX->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button7->Text == "X" && button8->Text == "X" && button9->Text == "X") {
 				button7->BackColor = System::Drawing::Color::PowderBlue;
@@ -477,7 +504,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblX->Text);
 				lblX->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button7->Text == "X" && button5->Text == "X" && button3->Text == "X") {
 				button7->BackColor = System::Drawing::Color::PowderBlue;
@@ -487,7 +514,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblX->Text);
 				lblX->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button1->Text == "X" && button4->Text == "X" && button7->Text == "X") {
 				button1->BackColor = System::Drawing::Color::PowderBlue;
@@ -497,7 +524,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblX->Text);
 				lblX->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button2->Text == "X" && button5->Text == "X" && button8->Text == "X") {
 				button2->BackColor = System::Drawing::Color::PowderBlue;
@@ -507,7 +534,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblX->Text);
 				lblX->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button3->Text == "X" && button6->Text == "X" && button9->Text == "X") {
 				button3->BackColor = System::Drawing::Color::PowderBlue;
@@ -517,11 +544,10 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblX->Text);
 				lblX->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 
-			/****************  Pemain O  ****************/
-
+			/****************  Kondisi menang Pemain O  ****************/
 			if (button1->Text == "O" && button2->Text == "O" && button3->Text == "O") {
 				button1->BackColor = System::Drawing::Color::Gold;
 				button2->BackColor = System::Drawing::Color::Gold;
@@ -530,7 +556,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblO->Text);
 				lblO->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button1->Text == "O" && button5->Text == "O" && button9->Text == "O") {
 				button1->BackColor = System::Drawing::Color::Gold;
@@ -540,7 +566,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblO->Text);
 				lblO->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button4->Text == "O" && button5->Text == "O" && button6->Text == "O") {
 				button4->BackColor = System::Drawing::Color::Gold;
@@ -550,7 +576,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblO->Text);
 				lblO->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button7->Text == "O" && button8->Text == "O" && button9->Text == "O") {
 				button7->BackColor = System::Drawing::Color::Gold;
@@ -560,7 +586,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblO->Text);
 				lblO->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button7->Text == "O" && button5->Text == "O" && button3->Text == "O") {
 				button7->BackColor = System::Drawing::Color::Gold;
@@ -570,7 +596,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblO->Text);
 				lblO->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button1->Text == "O" && button4->Text == "O" && button7->Text == "O") {
 				button1->BackColor = System::Drawing::Color::Gold;
@@ -580,7 +606,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblO->Text);
 				lblO->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button2->Text == "O" && button5->Text == "O" && button8->Text == "O") {
 				button2->BackColor = System::Drawing::Color::Gold;
@@ -590,7 +616,7 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblO->Text);
 				lblO->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 			if (button3->Text == "O" && button6->Text == "O" && button9->Text == "O") {
 				button3->BackColor = System::Drawing::Color::Gold;
@@ -600,10 +626,11 @@ namespace Tictactoe {
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
 				plusone = int::Parse(lblO->Text);
 				lblO->Text = Convert::ToString(plusone + 1);
-				Enabled_False();
+				Reset_Game();
 			}
 		}
 
+	//Tombol Permainan 3x3
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (checker == false) {
 			button1->Text = "X";
@@ -613,8 +640,8 @@ namespace Tictactoe {
 			button1->Text = "O";
 			checker = false;
 		}
-		score();
 		button1->Enabled = false;
+		score();
 		PlayerTurn();
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -626,8 +653,8 @@ namespace Tictactoe {
 			button2->Text = "O";
 			checker = false;
 		}
-		score();
 		button2->Enabled = false;
+		score();
 		PlayerTurn();
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -639,8 +666,8 @@ namespace Tictactoe {
 			button3->Text = "O";
 			checker = false;
 		}
-		score();
 		button3->Enabled = false;
+		score();
 		PlayerTurn();
 	}
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -652,8 +679,8 @@ namespace Tictactoe {
 			button4->Text = "O";
 			checker = false;
 		}
-		score();
 		button4->Enabled = false;
+		score();
 		PlayerTurn();
 	}
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -665,8 +692,8 @@ namespace Tictactoe {
 			button5->Text = "O";
 			checker = false;
 		}
-		score();
 		button5->Enabled = false;
+		score();
 		PlayerTurn();
 	}
 	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -678,8 +705,8 @@ namespace Tictactoe {
 			button6->Text = "O";
 			checker = false;
 		}
-		score();
 		button6->Enabled = false;
+		score();
 		PlayerTurn();
 	}
 	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -691,8 +718,8 @@ namespace Tictactoe {
 			button7->Text = "O";
 			checker = false;
 		}
-		score();
 		button7->Enabled = false;
+		score();
 		PlayerTurn();
 	}
 	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -704,8 +731,8 @@ namespace Tictactoe {
 			button8->Text = "O";
 			checker = false;
 		}
-		score();
 		button8->Enabled = false;
+		score();
 		PlayerTurn();
 	}
 	private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -717,8 +744,8 @@ namespace Tictactoe {
 			button9->Text = "O";
 			checker = false;
 		}
-		score();
 		button9->Enabled = false;
+		score();
 		PlayerTurn();
 	}
 
