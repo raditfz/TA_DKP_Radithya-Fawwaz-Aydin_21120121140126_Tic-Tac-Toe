@@ -46,7 +46,6 @@ namespace Tictactoe {
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button1;
-
 	private: System::Windows::Forms::Label^ lblPlayer;
 	private: System::Windows::Forms::Button^ button_NewGame;
 	private: System::Windows::Forms::Label^ lbl1;
@@ -401,7 +400,7 @@ namespace Tictactoe {
 
 		}
 		Boolean checker; //Pengecek giliran pemain, untuk mengubah giliran
-		int plusone; //Penghitung banyak menang
+		int nilai_menang; //Penghitung banyak menang
 
 #pragma endregion
 		//Fungsi membuat semua tombol Non aktif
@@ -462,8 +461,7 @@ namespace Tictactoe {
 			}
 		}
 
-		//Fungsi skor untuk penghitung setiap kali menang
-		//Setiap tanda memiliki 8 kondisi kemenangan
+		//Kondisi menang dengan 8 kemungkinan pada masing-masing tanda
 		void score() {
 			/****************  Kondisi menang Pemain X  ****************/
 			if (button1->Text == "X" && button2->Text == "X" && button3->Text == "X") {
@@ -472,8 +470,8 @@ namespace Tictactoe {
 				button3->BackColor = System::Drawing::Color::PowderBlue;
 				MessageBox::Show("Pemain X menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblX->Text);
-				lblX->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblX->Text);
+				lblX->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button1->Text == "X" && button5->Text == "X" && button9->Text == "X") {
@@ -482,8 +480,8 @@ namespace Tictactoe {
 				button9->BackColor = System::Drawing::Color::PowderBlue;
 				MessageBox::Show("Pemain X menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblX->Text);
-				lblX->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblX->Text);
+				lblX->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button4->Text == "X" && button5->Text == "X" && button6->Text == "X") {
@@ -492,8 +490,8 @@ namespace Tictactoe {
 				button6->BackColor = System::Drawing::Color::PowderBlue;
 				MessageBox::Show("Pemain X menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblX->Text);
-				lblX->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblX->Text);
+				lblX->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button7->Text == "X" && button8->Text == "X" && button9->Text == "X") {
@@ -502,8 +500,8 @@ namespace Tictactoe {
 				button9->BackColor = System::Drawing::Color::PowderBlue;
 				MessageBox::Show("Pemain X menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblX->Text);
-				lblX->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblX->Text);
+				lblX->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button7->Text == "X" && button5->Text == "X" && button3->Text == "X") {
@@ -512,8 +510,8 @@ namespace Tictactoe {
 				button3->BackColor = System::Drawing::Color::PowderBlue;
 				MessageBox::Show("Pemain X menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblX->Text);
-				lblX->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblX->Text);
+				lblX->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button1->Text == "X" && button4->Text == "X" && button7->Text == "X") {
@@ -522,8 +520,8 @@ namespace Tictactoe {
 				button7->BackColor = System::Drawing::Color::PowderBlue;
 				MessageBox::Show("Pemain X menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblX->Text);
-				lblX->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblX->Text);
+				lblX->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button2->Text == "X" && button5->Text == "X" && button8->Text == "X") {
@@ -532,8 +530,8 @@ namespace Tictactoe {
 				button8->BackColor = System::Drawing::Color::PowderBlue;
 				MessageBox::Show("Pemain X menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblX->Text);
-				lblX->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblX->Text);
+				lblX->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button3->Text == "X" && button6->Text == "X" && button9->Text == "X") {
@@ -542,8 +540,8 @@ namespace Tictactoe {
 				button9->BackColor = System::Drawing::Color::PowderBlue;
 				MessageBox::Show("Pemain X menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblX->Text);
-				lblX->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblX->Text);
+				lblX->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 
@@ -554,8 +552,8 @@ namespace Tictactoe {
 				button3->BackColor = System::Drawing::Color::Gold;
 				MessageBox::Show("Pemain O menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblO->Text);
-				lblO->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblO->Text);
+				lblO->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button1->Text == "O" && button5->Text == "O" && button9->Text == "O") {
@@ -564,8 +562,8 @@ namespace Tictactoe {
 				button9->BackColor = System::Drawing::Color::Gold;
 				MessageBox::Show("Pemain O menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblO->Text);
-				lblO->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblO->Text);
+				lblO->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button4->Text == "O" && button5->Text == "O" && button6->Text == "O") {
@@ -574,8 +572,8 @@ namespace Tictactoe {
 				button6->BackColor = System::Drawing::Color::Gold;
 				MessageBox::Show("Pemain O menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblO->Text);
-				lblO->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblO->Text);
+				lblO->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button7->Text == "O" && button8->Text == "O" && button9->Text == "O") {
@@ -584,8 +582,8 @@ namespace Tictactoe {
 				button9->BackColor = System::Drawing::Color::Gold;
 				MessageBox::Show("Pemain O menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblO->Text);
-				lblO->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblO->Text);
+				lblO->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button7->Text == "O" && button5->Text == "O" && button3->Text == "O") {
@@ -594,8 +592,8 @@ namespace Tictactoe {
 				button3->BackColor = System::Drawing::Color::Gold;
 				MessageBox::Show("Pemain O menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblO->Text);
-				lblO->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblO->Text);
+				lblO->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button1->Text == "O" && button4->Text == "O" && button7->Text == "O") {
@@ -604,8 +602,8 @@ namespace Tictactoe {
 				button7->BackColor = System::Drawing::Color::Gold;
 				MessageBox::Show("Pemain O menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblO->Text);
-				lblO->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblO->Text);
+				lblO->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button2->Text == "O" && button5->Text == "O" && button8->Text == "O") {
@@ -614,8 +612,8 @@ namespace Tictactoe {
 				button8->BackColor = System::Drawing::Color::Gold;
 				MessageBox::Show("Pemain O menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblO->Text);
-				lblO->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblO->Text);
+				lblO->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 			if (button3->Text == "O" && button6->Text == "O" && button9->Text == "O") {
@@ -624,13 +622,13 @@ namespace Tictactoe {
 				button9->BackColor = System::Drawing::Color::Gold;
 				MessageBox::Show("Pemain O menang.", "Selamat!",
 					MessageBoxButtons::OK, MessageBoxIcon::Information);
-				plusone = int::Parse(lblO->Text);
-				lblO->Text = Convert::ToString(plusone + 1);
+				nilai_menang = int::Parse(lblO->Text);
+				lblO->Text = Convert::ToString(nilai_menang + 1);
 				Reset_Game();
 			}
 		}
 
-	//Tombol Permainan 3x3
+	//Tombol papan utama permainan grid 3x3
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 		if (checker == false) {
 			button1->Text = "X";
@@ -748,41 +746,6 @@ namespace Tictactoe {
 		score();
 		PlayerTurn();
 	}
-
-	//Tombol Reset untuk mengulang permainan (mengaktifkan 9 tombol permainan)
-	private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ e) {
-	button1->Enabled = true;
-	button2->Enabled = true;
-	button3->Enabled = true;
-	button4->Enabled = true;
-	button5->Enabled = true;
-	button6->Enabled = true;
-	button7->Enabled = true;
-	button8->Enabled = true;
-	button9->Enabled = true;
-
-	button1->Text = "";
-	button2->Text = "";
-	button3->Text = "";
-	button4->Text = "";
-	button5->Text = "";
-	button6->Text = "";
-	button7->Text = "";
-	button8->Text = "";
-	button9->Text = "";
-
-	button1->BackColor = System::Drawing::Color::White;
-	button2->BackColor = System::Drawing::Color::White;
-	button3->BackColor = System::Drawing::Color::White;
-	button4->BackColor = System::Drawing::Color::White;
-	button5->BackColor = System::Drawing::Color::White;
-	button6->BackColor = System::Drawing::Color::White;
-	button7->BackColor = System::Drawing::Color::White;
-	button8->BackColor = System::Drawing::Color::White;
-	button9->BackColor = System::Drawing::Color::White;
-
-	button_NewGame->Enabled = true;
-}
 
 	//Tombol NewGame mengulang skor pemain (kembali ke 0) dan mengulang permainan
 	private: System::Void button_NewGame_Click(System::Object^ sender, System::EventArgs^ e) {
